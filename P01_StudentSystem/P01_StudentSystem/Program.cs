@@ -123,7 +123,7 @@ foreach (var resource in resources)
     Console.WriteLine($"{resource.Name} - {resource.Course.Name}");
 }
 
-// ======================= Homework =======================
+// Homework
 
 if (!db.Homeworks.Any())
 {

@@ -9,7 +9,7 @@ db.Database.Migrate();
 Console.WriteLine("Student System");
 Console.WriteLine();
 
-// ======================= Students =======================
+// Students
 
 if (!db.Students.Any())
 {
@@ -45,7 +45,7 @@ foreach (var student in db.Students)
     Console.WriteLine($"{student.StudentId} - {student.Name} - {student.PhoneNumber}");
 }
 
-// ======================= Courses =======================
+// Courses
 
 if (!db.Courses.Any())
 {
@@ -83,7 +83,7 @@ foreach (var course in db.Courses)
     Console.WriteLine($"{course.CourseId} - {course.Name} - {course.Price}");
 }
 
-// ======================= Resources =======================
+// Resources
 
 if (!db.Resources.Any())
 {
@@ -156,7 +156,7 @@ foreach (var homework in homeworks)
     Console.WriteLine($"{homework.Student.Name} submitted {homework.Content} in {homework.Course.Name}");
 }
 
-// ======================= Student Courses =======================
+// Student courses
 
 if (!db.StudentsCourses.Any())
 {
